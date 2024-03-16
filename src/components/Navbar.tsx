@@ -10,12 +10,12 @@ const NavLinks = [
 export default function Navbar() {
   return (
     <nav>
-      <ul className="flex gap-3 py-4">
+      <ul className="flex gap-3 p-3 text-neutral-500">
         {NavLinks.map(({ label, path }) => (
           <li key={path}>
             <Link 
               href={path}
-              className="transition-all hover:text-neutral-600"
+              className="transition-all hover:text-neutral-900"
             >
               {label}
             </Link>
