@@ -1,3 +1,4 @@
+import { GithubIcon, LinkedInIcon } from "@/components/icons";
 
 export const Summary = 'Full Stack Developer, collaborative story-teller, and a maker of things. Enjoys building creative, dynamic products from start to finish. Focused on delivering intuitive experiences with extra attention to detail.';
 
@@ -8,10 +9,10 @@ export const About = [
 ];
 
 export const SocialMedia = [
-  { name: 'Github', link: 'https://github.com/jfpalchak', icon: '' },
-  { name: 'LinkedIn', link: 'https://www.linkedin.com/in/joey-palchak/', icon: '' },
-  { name: 'Email', link: 'mailto:joey.palchak@gmail.com', icon: '' },
-];
+  { name: 'Github', link: 'https://github.com/jfpalchak', icon: GithubIcon },
+  { name: 'LinkedIn', link: 'https://www.linkedin.com/in/joey-palchak/', icon: LinkedInIcon },
+  // { name: 'Email', link: 'mailto:joey.palchak@gmail.com', icon: '' },
+] as const;
 
 export interface Project {
   name: string;
@@ -99,7 +100,7 @@ export const MyProjects: Project[] = [
     logo: '',
     links: [
       { label: 'github.com', href: 'https://github.com/jfpalchak/text-adventure' },
-      { label: 'text-adventure.io', href: 'https://jfpalchak.github.io/text-adventure/' },
+      { label: 'github.io/text-adventure', href: 'https://jfpalchak.github.io/text-adventure/' },
     ]
   },
 ]

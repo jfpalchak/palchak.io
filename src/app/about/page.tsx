@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <section>
       <div>
-        <h1 className="text-3xl font-medium mb-6">Joey Palchak / about me</h1>
+        <h1 className="text-3xl font-medium mb-6">Joey Palchak <span className="text-xl font-normal">/ about me</span></h1>
         {About.map((info, index) => (
           <p key={index} className="pb-2">{info}</p>
         ))}

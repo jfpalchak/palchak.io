@@ -1,18 +1,22 @@
 import { SocialMedia, Summary, MyProjects } from "@/data/lifeApi";
+import { ArrowLinkIcon } from "@/components/icons";
 
 export default function Home() {
   return (
     <section>
+      {/* SUMMARY */}
       <div>
         <h1 className="text-3xl font-medium mb-6">Joey Palchak</h1>
-        <p>{Summary}</p>
+        <p className="text-sm sm:text-base">{Summary}</p>
       </div>
       {/* SOCIALS */}
       <div className="my-3">
         <ul className="flex gap-4">
-          {SocialMedia.map((social) => (
-            <li key={social.name}>
-              <a href={social.link}>{social.name}</a>
+          {SocialMedia.map(({ name, link, icon: Icon }) => (
+            <li key={name}>
+              <a href={link}>
+                <Icon className="w-6 h-6 fill-neutral-400 transition hover:fill-zinc-800" />
+              </a>
             </li>
           ))}
         </ul>
@@ -21,8 +25,8 @@ export default function Home() {
       <div>
         <h2 className="text-lg font-medium my-5">Projects</h2>
         {MyProjects.map(({ stack, links, ...project }) => (
-          <div key={project.name} className="sm:grid sm:grid-cols-4 gap-1 mb-5">
-            <p className="text-sm">{project.status}</p>
+          <div key={project.name} className="sm:grid sm:grid-cols-4 mb-5">
+            <p className="text-sm text-neutral-500">{project.status}</p>
             <div className="pb-3 col-span-3">
               <h3>{project.name}</h3>
               <p className="text-sm text-neutral-500">{project.role}</p>
@@ -34,10 +38,11 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <div className="flex justify-between mt-3 text-sm">
+              <div className="flex justify-between mt-3 text-sm text-neutral-500">
                 {links.map(({ label, href }) => (
-                  <a key={label} href={href}>
+                  <a key={label} href={href} className="flex gap-1">
                     {label}
+                    <ArrowLinkIcon className="w-4 h-5 fill-neutral-500" />
                   </a>
                 ))}
               </div>
