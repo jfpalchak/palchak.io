@@ -20,9 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="antialiased max-w-xl mx-auto">
-        <main className="flex flex-col max-w-xl mx-auto mt-20 mb-10 px-3">
-          <Navbar />
+      <body className="antialiased mt-20 max-w-xl mx-auto">
+        <Navbar />
+        <main className="flex flex-col mb-10 px-3">
           {children}
         </main>
         <Footer />
