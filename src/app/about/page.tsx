@@ -10,8 +10,8 @@ export default function AboutPage() {
     <section>
       <div>
         <h1 className="text-3xl font-medium mb-6">Joey Palchak / about me</h1>
-        {About.map((info) => (
-          <p className="pb-2">{info}</p>
+        {About.map((info, index) => (
+          <p key={index} className="pb-2">{info}</p>
         ))}
       </div>
     </section>

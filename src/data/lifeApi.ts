@@ -15,11 +15,12 @@ export const SocialMedia = [
 
 export interface Project {
   name: string;
-  type: string;
+  status: string;
+  role: string;
   stack: string[];
   description: string;
   logo: string; // image path
-  links?: {
+  links: {
     label: string;
     href: string;
   }[];
@@ -28,7 +29,8 @@ export interface Project {
 export const MyProjects: Project[] = [
   {
     name: 'VinoSeeker',
-    type: 'Professional',
+    role: 'Full Stack Developer',
+    status: 'Ongoing',
     stack: [
       'JavaScript',
       'React',
@@ -38,9 +40,6 @@ export const MyProjects: Project[] = [
       'Node.js',
       'Express.js',
       'PostgreSQL',
-      'Feathers.js',
-      'Sequelize.js',
-      'Docker'
     ],
     description: 'A geo-social networking service that allows users to discover wines and wineries, record their experiences, and share with friends.',
     logo: '',
@@ -50,7 +49,8 @@ export const MyProjects: Project[] = [
   },
   {
     name: 'Cranberry',
-    type: 'Personal Project',
+    role: 'Side Project',
+    status: 'Ongoing',
     stack: [
       'TypeScript',
       'React',
@@ -59,7 +59,6 @@ export const MyProjects: Project[] = [
       '.NET',
       'EF Core',
       'MySQL',
-      'Docker'
     ],
     description: 'A play on "quitting cold turkey," Cranberry is a daily tracker with motivating metrics to help users quit smoking.',
     logo: '',
@@ -70,12 +69,15 @@ export const MyProjects: Project[] = [
   },
   {
     name: 'EOL Messenger',
-    type: 'Personal Project',
+    role: 'Side Project',
+    status: '2023',
     stack: [
+      'JavaScript',
       'C#',
       '.NET',
       'SignalR',
-      'JavaScript'
+      'EF Core',
+      'MySQL',
     ],
     description: 'An early 00\'s inspired online-messaging service that allows users to communicate real-time in a public chat room, or one-on-one in a private conversation with another online user.',
     logo: '',
@@ -86,9 +88,11 @@ export const MyProjects: Project[] = [
   },
   {
     name: 'Dungeon Adventure',
-    type: 'Personal Project',
+    role: 'Side Project',
+    status: '2023',
     stack: [
       'JavaScript',
+      'HTML/CSS',
       'webpack'
     ],
     description: 'A text-based adventure game, where the user navigates and interacts with the world via text input.',
