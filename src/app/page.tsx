@@ -1,26 +1,17 @@
-import { SocialMedia, Summary, MyProjects } from "@/data/lifeApi";
+import { Summary, MyProjects } from "@/data/lifeApi";
 import { ArrowLinkIcon } from "@/components/icons";
+import Socials from "@/components/Socials";
 
 export default function Home() {
   return (
     <section>
       {/* SUMMARY */}
       <div>
-        <h1 className="text-3xl font-medium mb-6">Joey Palchak</h1>
-        <p className="text-sm sm:text-base">{Summary}</p>
+        <h1 className="text-3xl font-medium">Joey Palchak</h1>
+        <p className="text-sm sm:text-base mt-6">{Summary}</p>
       </div>
       {/* SOCIALS */}
-      <div className="my-3">
-        <ul className="flex gap-4">
-          {SocialMedia.map(({ name, link, icon: Icon }) => (
-            <li key={name}>
-              <a href={link}>
-                <Icon className="w-6 h-6 fill-neutral-400 transition hover:fill-zinc-800" />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <Socials />
       {/* PROJECTS */}
       <div>
         <h2 className="text-lg font-medium my-5">Projects</h2>
@@ -40,7 +31,7 @@ export default function Home() {
               </ul>
               <div className="flex justify-between mt-3 text-sm text-neutral-500">
                 {links.map(({ label, href }) => (
-                  <a key={label} href={href} className="flex gap-1">
+                  <a key={label} href={href} className="flex gap-1 transition hover:underline">
                     {label}
                     <ArrowLinkIcon className="w-4 h-5 fill-neutral-500" />
                   </a>

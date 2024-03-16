@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { About } from '@/data/lifeApi';
+import Socials from "@/components/Socials";
 
 export const metadata: Metadata = {
   title: 'About',
@@ -14,6 +15,9 @@ export default function AboutPage() {
           <p key={index} className="pb-2">{info}</p>
         ))}
       </div>
+
+      <Socials />
+
     </section>
   )
 }

@@ -3,8 +3,8 @@ import Link from "next/link";
 const NavLinks = [
   { label: 'home', path: '/' },
   { label: 'about', path: '/about' },
-  { label: 'projects', path: '/projects' },
-  { label: 'resume', path: '/resume' },
+  // { label: 'projects', path: '/projects' },
+  // { label: 'resume', path: '/resume' },
 ];
 
 export default function Navbar() {
