@@ -80,7 +80,7 @@ export const MyProjects: Project[] = [
       'EF Core',
       'MySQL',
     ],
-    description: 'An early 00\'s inspired online-messaging service that allows users to communicate real-time in a public chat room, or one-on-one in a private conversation with another online user.',
+    description: 'An early 2000\'s inspired public chat room, with user-to-user private chats.',
     logo: '',
     links: [
       { label: 'github.com', href: 'https://github.com/jfpalchak/EOL.Solution' },
@@ -93,8 +93,10 @@ export const MyProjects: Project[] = [
     status: '2023',
     stack: [
       'JavaScript',
+      'Bootstrap',
       'HTML/CSS',
-      'webpack'
+      'webpack',
+      'babel',
     ],
     description: 'A text-based adventure game, where the user navigates and interacts with the world via text input.',
     logo: '',
