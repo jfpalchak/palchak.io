@@ -17,8 +17,8 @@ This application requires Node.js v18.17+.
 To clone this directory and run the application locally, enter the following commands into your terminal:
 
 ```bash
-git clone https://github.com/jfpalchak/palchak-nextfolio.git
-cd palchak-nextfolio
+git clone https://github.com/jfpalchak/palchak.io.git
+cd palchak.io
 npm install
 npm run dev
 ```
