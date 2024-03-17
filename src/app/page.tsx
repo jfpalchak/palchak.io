@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section>
       <div>
-        <h1 className="text-3xl font-medium mb-6">
+        <h1 className="mb-6 text-3xl font-medium">
           {NAME}
         </h1>
         <p className="text-sm sm:text-base">
@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <Socials />
       <div>
-        <h2 className="text-lg font-medium mt-8">
+        <h2 className="mt-8 text-lg font-medium">
           Projects
         </h2>
         {PROJECTS.map((project) => (
