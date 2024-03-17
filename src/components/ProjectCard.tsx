@@ -5,11 +5,11 @@ import ExternalLink from '@/components/ExternalLink';
 import { ArrowLinkIcon } from '@/components/icons';
 import { type Project } from '@/data/lifeApi';
 
-interface CardProps {
+interface Props {
   project: Project;
 }
 
-export default function ProjectCard({ project }: CardProps) {
+export default function ProjectCard({ project }: Props) {
   return (
     <div className="mb-5 min-h-[260px] sm:grid sm:grid-cols-4">
       <p className="pl-3 pt-3 text-sm text-neutral-500 sm:pl-0">

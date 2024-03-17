@@ -1,4 +1,4 @@
-import { GithubIcon, LinkedInIcon, AtIcon } from '@/components/icons';
+import { GithubIcon, LinkedInIcon, AtIcon, GmailIcon } from '@/components/icons';
 
 export const NAME = 'Joey Palchak';
 
@@ -25,7 +25,7 @@ export const SOCIAL_MEDIA = [
   { 
     name: 'Email', 
     link: 'mailto:joey.palchak@gmail.com', 
-    icon: AtIcon 
+    icon: GmailIcon 
   },
 ] as const;
 
