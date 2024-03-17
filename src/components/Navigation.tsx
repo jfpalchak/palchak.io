@@ -3,9 +3,8 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import clsx from 'clsx';
-// import NavItem from './NavItem';
 
-const NavLinks = [
+const ROUTES = [
   { label: 'home', path: '/' },
   { label: 'about', path: '/about' },
   // { label: 'projects', path: '/projects' },
@@ -19,7 +18,7 @@ export default function Navigation() {
   return (
     <nav>
       <ul className="flex gap-3 p-3 text-neutral-500">
-        {NavLinks.map(({ label, path }) => (
+        {ROUTES.map(({ label, path }) => (
           <li key={path}>
             <Link
               href={path}
