@@ -1,14 +1,15 @@
-import { SocialMedia } from "@/data/lifeApi"
+import { SOCIAL_MEDIA } from "@/data/lifeApi"
+import ExternalLink from "./ExternalLink";
 
 export default function Socials() {
   return (
     <div className="my-3">
       <ul className="flex gap-4">
-        {SocialMedia.map(({ name, link, icon: Icon }) => (
+        {SOCIAL_MEDIA.map(({ name, link, icon: Icon }) => (
           <li key={name}>
-            <a href={link}>
-              <Icon className="w-6 h-6 fill-neutral-400 transition hover:fill-neutral-800" />
-            </a>
+            <ExternalLink href={link}>
+              <Icon className="w-5 h-5 fill-neutral-400 transition hover:fill-neutral-800" />
+            </ExternalLink>
           </li>
         ))}
       </ul>

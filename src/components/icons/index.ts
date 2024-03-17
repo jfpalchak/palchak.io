@@ -1,4 +1,6 @@
-export { default as ArrowLinkIcon } from '@/components/icons/ArrowLinkIcon';
-export { default as ChainLinkIcon } from '@/components/icons/ChainLinkIcon';
-export { default as GithubIcon } from '@/components/icons/GithubIcon';
-export { default as LinkedInIcon } from '@/components/icons/LinkedInIcon';
+export { ArrowLinkIcon } from './ArrowLinkIcon';
+export { ChainLinkIcon } from './ChainLinkIcon';
+export { GithubIcon } from './GithubIcon';
+export { LinkedInIcon } from './LinkedInIcon';
+export { GmailIcon } from './GMailIcon';
+export { AtIcon } from './AtIcon';
