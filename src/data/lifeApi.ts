@@ -1,5 +1,7 @@
 import { GithubIcon, LinkedInIcon, AtIcon } from "@/components/icons";
 
+export const NAME = 'Joey Palchak';
+
 export const SUMMARY = 'Full Stack Developer, collaborative story-teller, and a maker of things. Enjoys building creative, dynamic products from start to finish. Focused on delivering intuitive experiences with extra attention to detail.';
 
 export const ABOUT = [
@@ -11,7 +13,7 @@ export const ABOUT = [
 export const SOCIAL_MEDIA = [
   { name: 'Github', link: 'https://github.com/jfpalchak', icon: GithubIcon },
   { name: 'LinkedIn', link: 'https://www.linkedin.com/in/joey-palchak/', icon: LinkedInIcon },
-  { name: 'Email', link: 'mailto://joey.palchak@gmail.com', icon: AtIcon },
+  { name: 'Email', link: 'mailto:joey.palchak@gmail.com', icon: AtIcon },
 ] as const;
 
 export interface Project {

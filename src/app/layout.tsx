@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 import { inter } from "@/styles/fonts";
-import "@/styles/globals.css";
-import Navbar from "@/components/Navbar";
+import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+// import Header from "@/components/Header";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body className="antialiased mt-20 max-w-xl mx-auto">
-        <Navbar />
+        <Navigation />
+        {/* <Header /> */}
         <main className="flex flex-col mb-10 px-3">
           {children}
         </main>
