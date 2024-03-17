@@ -1,6 +1,6 @@
 # palchak.io
 
-#### This is my personal site and portfolio, built using the Next.js framework for React.
+#### This is my personal website and portfolio, built using the Next.js framework for React.
 
 ## Technologies Used
 
@@ -12,6 +12,19 @@
 
 ## Local Setup & Installation
 
+This application requires Node.js v18.17+.
+
+To clone this directory and run the application locally, enter the following commands into your terminal:
+
+```bash
+git clone https://github.com/jfpalchak/palchak-nextfolio.git
+cd palchak-nextfolio
+npm install
+npm run dev
+```
+
+With the application running in development mode, open [http://localhost:3000](http://localhost:3000) with your browser to view and navigate the site.
+<!-- 
 1. Copy the **[URL](https://github.com/jfpalchak/palchak-nextfolio.git)** provided for this repository.
 2. Open Terminal.
 3. Change your working directory to where you'd like to create the cloned directory.
@@ -35,6 +48,17 @@ $ npm run dev
 ```
 
 8. Open [http://localhost:3000](http://localhost:3000) with your browser to view and navigate the site.
+
+### Alternatively:
+
+Copy and paste the following commands into your terminal:
+
+```bash
+git clone https://github.com/jfpalchak/palchak-nextfolio.git
+cd palchak-nextfolio
+npm install
+npm run dev
+``` -->
 
 ## Credits
 
