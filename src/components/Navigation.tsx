@@ -1,8 +1,9 @@
 'use client';
 
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-// import NavItem from "./NavItem";
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import clsx from 'clsx';
+// import NavItem from './NavItem';
 
 const NavLinks = [
   { label: 'home', path: '/' },
@@ -20,9 +21,14 @@ export default function Navigation() {
       <ul className="flex gap-3 p-3 text-neutral-500">
         {NavLinks.map(({ label, path }) => (
           <li key={path}>
-            <Link 
+            <Link
               href={path}
-              className={`transition-all ${pathname === path ? '' : 'hover:'}text-neutral-900`}
+              className={clsx(
+                'transition-all hover:text-neutral-900',
+                {
+                  'text-neutral-900': pathname === path,
+                }
+              )}
             >
               {label}
             </Link>

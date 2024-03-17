@@ -1,14 +1,13 @@
-import { NAME, SUMMARY, PROJECTS } from "@/data/lifeApi";
-import Socials from "@/components/Socials";
-import ProjectCard from "@/components/ProjectCard";
+import { NAME, SUMMARY, PROJECTS } from '@/data/lifeApi';
+import Socials from '@/components/Socials';
+import ProjectCard from '@/components/ProjectCard';
+import Heading from '@/components/Heading';
 
 export default function Home() {
   return (
     <section>
+      <Heading>{NAME}</Heading>
       <div>
-        <h1 className="mb-6 text-3xl font-medium">
-          {NAME}
-        </h1>
         <p className="text-sm sm:text-base">
           {SUMMARY}
         </p>

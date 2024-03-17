@@ -1,17 +1,18 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren } from 'react';
+import clsx from 'clsx';
 
 interface Props {
   href: string;
   className?: string;
-};
+}
 
-export default function ExternalLink({ href, className, children, ...props}: PropsWithChildren<Props>) {
+export default function ExternalLink({ href, className, children, ...props }: PropsWithChildren<Props>) {
   return (
-    <a 
+    <a
       href={href}
       // target="_blank"
       rel="noopener noreferrer"
-      className={className}
+      className={clsx(className)}
       {...props}
     >
       {children}
