@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Chip from '@/components/Chip';
 import ExternalLink from '@/components/ExternalLink';
 import { ArrowLinkIcon } from '@/components/icons';
-import { type Project } from '@/data/lifeApi';
+import { type Project } from '@/data/projects';
 
 interface Props {
   project: Project;

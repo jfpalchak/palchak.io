@@ -1,4 +1,4 @@
-import { SOCIAL_MEDIA } from '@/data/lifeApi';
+import { SOCIAL_MEDIA } from '@/data';
 import ExternalLink from './ExternalLink';
 
 export default function Socials() {

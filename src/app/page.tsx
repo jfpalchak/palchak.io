@@ -1,4 +1,4 @@
-import { NAME, SUMMARY, PROJECTS } from '@/data/lifeApi';
+import { NAME, SUMMARY, PROJECTS } from '@/data';
 import Socials from '@/components/Socials';
 import ProjectCard from '@/components/ProjectCard';
 import Heading from '@/components/Heading';

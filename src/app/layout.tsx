@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
-import { inter } from '@/styles/fonts';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { inter } from '@/styles/fonts';
 import '@/styles/globals.css';
 
 const seoDescription = 'Full Stack Developer, collaborative story-teller, and a maker of things.';
