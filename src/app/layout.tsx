@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: 'Joey Palchak | %s',
     default: 'Joey Palchak | Full Stack Developer',
   },
-  description: 'A Full Stack Developer, collaborative story-teller, and a maker of things.',
+  description: 'Full Stack Developer, collaborative story-teller, and a maker of things.',
 };
 
 export default function RootLayout({
