@@ -11,11 +11,21 @@ const seoDescription = 'Full Stack Developer, collaborative story-teller, and a 
 
 export const metadata: Metadata = {
   metadataBase: new URL(`https://palchak.io`),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     default: 'Joey Palchak | Full Stack Developer',
     template: 'Joey Palchak | %s',
   },
   description: seoDescription,
+  applicationName: `Joey Palchak's Website`,
+  authors: [{ name: 'Joey Palchak '}],
+  keywords: [
+    'joey palchak',
+    'web development',
+    'web dev',
+  ],
   openGraph: {
     title: 'Joey Palchak',
     description: seoDescription,
