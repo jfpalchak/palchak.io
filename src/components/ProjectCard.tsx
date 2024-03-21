@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: Props) {
         {project.status}
       </p>
       <div className="group col-span-3 flex flex-col rounded-lg p-3 transition-all hover:cursor-pointer hover:bg-neutral-100 sm:justify-between dark:hover:bg-neutral-400/5">
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-neutral-800/5 ring-1 ring-neutral-900/5 dark:bg-neutral-400/15 dark:border dark:border-neutral-600/50 dark:ring-0">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-neutral-800/5 ring-1 ring-neutral-900/5 dark:bg-neutral-800/70 dark:border dark:border-neutral-700/50 dark:ring-0">
           <Image
             src={project.logo}
             width={20}
@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: Props) {
             style={{ height: '28px', width: '20px' }}
           />
         </div>
-        <h3 className="mt-2">
+        <h3 className="mt-3">
           {project.name}
         </h3>
         <p className="text-sm text-neutral-500">
@@ -44,10 +44,10 @@ export default function ProjectCard({ project }: Props) {
             <ExternalLink
               key={label}
               href={href}
-              className="flex gap-1 transition hover:underline group-hover:text-neutral-800 dark:group-hover:text-neutral-100"
+              className="flex gap-1 transition hover:underline group-hover:text-neutral-800 dark:group-hover:text-neutral-300"
             >
               {label}
-              <ArrowLinkIcon className="h-5 w-4 fill-neutral-500 transition group-hover:fill-neutral-800 dark:group-hover:fill-neutral-100" />
+              <ArrowLinkIcon className="h-5 w-4 fill-neutral-500 transition group-hover:fill-neutral-800 dark:group-hover:fill-neutral-300" />
             </ExternalLink>
           ))}
         </div>
