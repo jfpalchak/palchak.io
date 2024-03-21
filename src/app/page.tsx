@@ -8,7 +8,7 @@ export default function Home() {
     <section>
       <Heading>{NAME}</Heading>
       <div>
-        <p className="text-sm sm:text-base">
+        <p className="text-sm sm:text-base dark:text-neutral-300">
           {SUMMARY}
         </p>
       </div>

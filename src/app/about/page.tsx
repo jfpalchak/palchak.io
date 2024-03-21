@@ -16,7 +16,7 @@ export default function AboutPage() {
       </Heading>
       <div>
         {ABOUT.map((info, index) => (
-          <p key={index} className="pb-2 text-sm sm:text-base">
+          <p key={index} className="pb-2 text-sm sm:text-base dark:text-neutral-300">
             {info}
           </p>
         ))}

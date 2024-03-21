@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
+import clsx from 'clsx';
 
+import { ThemeProvider } from '@/components/ThemeProvider';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { inter } from '@/styles/fonts';
@@ -45,13 +47,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
+    <html 
+      lang="en" 
+      className={clsx(
+        'text-black bg-white dark:text-white dark:bg-neutral-900',
+        inter.className,
+      )}
+    >
       <body className="mx-auto mt-20 max-w-xl antialiased">
-        <Navigation />
-        <main className="mb-10 flex flex-col px-3">
-          {children}
-        </main>
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+        >
+          <Navigation />
+          <main className="mb-10 flex flex-col px-3">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

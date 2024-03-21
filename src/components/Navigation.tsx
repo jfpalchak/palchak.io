@@ -17,15 +17,15 @@ export default function Navigation() {
 
   return (
     <nav>
-      <ul className="flex gap-3 p-3 text-neutral-500">
+      <ul className="flex gap-3 p-3 text-neutral-500 dark:text-neutral-400">
         {ROUTES.map(({ label, path }) => (
           <li key={path}>
             <Link
               href={path}
               className={clsx(
-                'transition-all hover:text-neutral-900',
+                'transition-all hover:text-neutral-900 dark:hover:text-neutral-100',
                 {
-                  'text-neutral-900': pathname === path,
+                  'text-neutral-900 dark:text-neutral-100': pathname === path,
                 }
               )}
             >
