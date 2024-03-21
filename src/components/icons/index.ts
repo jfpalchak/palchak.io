@@ -6,3 +6,5 @@ export { AtIcon } from './AtIcon';
 export { GmailIcon } from './GmailIcon';
 export { MoonIcon } from './MoonIcon';
 export { SunIcon } from './SunIcon';
+export { OpenEnvelopeIcon } from './OpenEnvelopeIcon';
+export { EnvelopeIcon } from './EnvelopeIcon';

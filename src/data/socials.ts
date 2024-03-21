@@ -1,10 +1,10 @@
-import { GithubIcon, LinkedInIcon, AtIcon, GmailIcon } from '@/components/icons';
+import { GithubIcon, LinkedInIcon, OpenEnvelopeIcon } from '@/components/icons';
 
 export const SOCIAL_MEDIA = [
   { 
     name: 'Github', 
     link: 'https://github.com/jfpalchak', 
-    icon: GithubIcon 
+    icon: GithubIcon,
   },
   {
     name: 'LinkedIn',
@@ -14,6 +14,6 @@ export const SOCIAL_MEDIA = [
   { 
     name: 'Email', 
     link: 'mailto:joey.palchak@gmail.com', 
-    icon: GmailIcon 
+    icon: OpenEnvelopeIcon,
   },
 ] as const;
