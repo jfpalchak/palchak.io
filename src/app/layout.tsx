@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     title: 'Joey Palchak',
     card: 'summary_large_image',
   },
+  icons: {
+    shortcut: '/favicon/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -57,8 +60,6 @@ export default function RootLayout({
       <body className="mx-auto mt-20 max-w-xl antialiased">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
         >
           <Navigation />
           <main className="mb-10 flex flex-col px-3">
