@@ -27,7 +27,7 @@ With the application running in development mode, open [http://localhost:3000](h
 
 ## Credits
 
-The design was inspired by [Maxime Bonhomme's personal site](https://github.com/maximebonhomme/bonhomme-2022).
+Design inspired by [Maxime Bonhomme's site](https://github.com/maximebonhomme/bonhomme-2022).
 
 ## License
 
