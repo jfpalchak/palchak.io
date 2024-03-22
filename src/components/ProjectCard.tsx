@@ -15,7 +15,7 @@ export default function ProjectCard({ project }: Props) {
       <p className="pl-3 pt-3 text-sm text-neutral-500 sm:pl-0">
         {project.status}
       </p>
-      <div className="group col-span-3 flex flex-col rounded-lg p-3 transition-all hover:cursor-pointer hover:bg-neutral-100 sm:justify-between dark:hover:bg-neutral-400/5">
+      <div className="group col-span-3 flex flex-col rounded-lg p-3 transition-all hover:bg-neutral-100 sm:justify-between dark:hover:bg-neutral-400/5">
         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-neutral-800/5 ring-1 ring-neutral-900/5 dark:bg-neutral-800/70 dark:border dark:border-neutral-700/50 dark:ring-0">
           <Image
             src={project.logo}
