@@ -19,7 +19,6 @@ export const metadata: Metadata = {
     template: 'Joey Palchak | %s',
   },
   description: seoDescription,
-  applicationName: `Joey Palchak's Website`,
   authors: [{ name: 'Joey Palchak '}],
   keywords: [
     'joey palchak',
@@ -66,11 +65,10 @@ export default function RootLayout({
         'text-black bg-white dark:text-white dark:bg-neutral-900',
         inter.className,
       )}
+      suppressHydrationWarning
     >
       <body className="mx-auto mt-20 max-w-xl antialiased">
-        <ThemeProvider
-          attribute="class"
-        >
+        <ThemeProvider>
           <Navigation />
           <main className="mb-10 flex flex-col px-3">
             {children}
