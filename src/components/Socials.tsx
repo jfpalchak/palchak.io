@@ -8,7 +8,7 @@ export default function Socials() {
         {SOCIAL_MEDIA.map(({ name, link, icon: Icon }) => (
           <li key={name}>
             <ExternalLink href={link}>
-              <Icon className="h-5 w-5 fill-neutral-400 transition hover:fill-neutral-800 dark:hover:fill-neutral-100" />
+              <Icon className="h-5 w-5 fill-neutral-400 transition hover:fill-neutral-800 dark:hover:fill-neutral-100 dark:fill-neutral-500" />
             </ExternalLink>
           </li>
         ))}
