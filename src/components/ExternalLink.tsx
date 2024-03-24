@@ -4,16 +4,23 @@ import clsx from 'clsx';
 interface Props {
   href: string;
   className?: string;
+  target?: string;
 }
 
-export default function ExternalLink({ href, className, children, ...props }: PropsWithChildren<Props>) {
+export default function ExternalLink({
+  href,
+  className,
+  target = '_self',
+  children,
+  ...rest
+}: PropsWithChildren<Props>) {
   return (
     <a
       href={href}
-      // target="_blank"
+      target={target}
       rel="noopener noreferrer"
       className={clsx(className)}
-      {...props}
+      {...rest}
     >
       {children}
     </a>
