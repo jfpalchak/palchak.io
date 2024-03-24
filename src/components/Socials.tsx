@@ -1,5 +1,5 @@
 import { SOCIAL_MEDIA } from '@/data';
-import ExternalLink from './ExternalLink';
+import ExternalLink from '@/components/ExternalLink';
 
 export default function Socials() {
   return (

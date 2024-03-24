@@ -7,7 +7,6 @@ import clsx from 'clsx';
 const ROUTES = [
   { label: 'home', path: '/' },
   { label: 'about', path: '/about' },
-  // { label: 'projects', path: '/projects' },
   // { label: 'blog', path: '/blog' },
   // { label: 'resume', path: '/resume' },
 ];
