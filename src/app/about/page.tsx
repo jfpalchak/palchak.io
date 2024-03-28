@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { type Metadata } from 'next';
 import { NAME, ABOUT } from '@/data';
 import Socials from '@/components/Socials';
 import Heading from '@/components/Heading';

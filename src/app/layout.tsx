@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { type Metadata } from 'next';
 import clsx from 'clsx';
 
 import { ThemeProvider } from '@/components/ThemeProvider';
