@@ -1,26 +1,15 @@
-import { PropsWithChildren } from 'react';
-import clsx from 'clsx';
+import type { PropsWithChildren, ComponentPropsWithoutRef } from 'react';
 
-interface Props {
-  href: string;
-  className?: string;
-  target?: string;
-}
+type Props = ComponentPropsWithoutRef<'a'>;
 
 export default function ExternalLink({
-  href,
-  className,
-  target = '_self',
   children,
-  ...rest
+  ...props
 }: PropsWithChildren<Props>) {
   return (
     <a
-      href={href}
-      target={target}
       rel="noopener noreferrer"
-      className={clsx(className)}
-      {...rest}
+      {...props}
     >
       {children}
     </a>
