@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <Socials />
       <div>
-        <h2 className="mt-8 text-lg font-medium">
+        <h2 className="mt-8 text-lg dark:text-white font-medium">
           Projects
         </h2>
         {PROJECTS.map((project) => (

@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: Props) {
             style={{ height: '28px', width: '20px' }}
           />
         </div>
-        <h3 className="mt-3">
+        <h3 className="mt-3 dark:text-white">
           {project.name}
         </h3>
         <p className="text-sm text-neutral-500">
