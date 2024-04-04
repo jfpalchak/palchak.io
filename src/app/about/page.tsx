@@ -30,7 +30,7 @@ export default function AboutPage() {
           target="_blank"
           className="flex gap-1 group/link items-center group-hover:transition-all underline-offset-2 hover:underline dark:hover:text-neutral-100"
         >
-          <ArrowLinkIcon className="h-5 w-5 fill-neutral-800 group-hover:transition-all dark:fill-neutral-300 dark:group-hover/link:fill-neutral-100" />
+          <ArrowLinkIcon className="h-5 w-5 fill-neutral-600 group-hover:transition-all dark:fill-neutral-300 dark:group-hover/link:fill-neutral-100" />
           <p className="h-6">my resume</p>
         </ExternalLink>
       </div>
