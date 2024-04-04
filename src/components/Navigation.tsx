@@ -10,7 +10,7 @@ import ExternalLink from '@/components/ExternalLink';
 const ROUTES = [
   { label: 'home', path: '/', type: 'internal' },
   { label: 'about', path: '/about', type: 'internal' },
-  { label: 'resume', path: '/cv/2024.pdf', type: 'external' },
+  // { label: 'resume', path: '/cv/2024.pdf', type: 'external' },
   // { label: 'blog', path: '/blog', type: 'internal' },
 ];
 
