@@ -46,8 +46,8 @@ export default function ProjectCard({ project }: Props) {
               href={href}
               className="flex gap-1 transition hover:underline group-hover:text-neutral-800 dark:group-hover:text-neutral-300"
             >
-              {label}
               <ArrowLinkIcon className="h-5 w-4 fill-neutral-500 transition group-hover:fill-neutral-800 dark:group-hover:fill-neutral-300" />
+              {label}
             </ExternalLink>
           ))}
         </div>
