@@ -11,7 +11,7 @@ interface Props {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <div className="mb-5 min-h-[260px] sm:grid sm:grid-cols-4">
+    <div className="min-h-[260px] sm:grid sm:grid-cols-4">
       <p className="pl-3 pt-3 text-sm text-neutral-500 sm:pl-0">
         {project.status}
       </p>
@@ -36,7 +36,9 @@ export default function ProjectCard({ project }: Props) {
         </p>
         <div className="mt-4 flex flex-wrap gap-1">
           {project.stack.map((tech) => (
-            <Chip key={tech}>{tech}</Chip>
+            <Chip key={tech}>
+              {tech}
+            </Chip>
           ))}
         </div>
         <div className="mt-4 flex justify-between text-sm text-neutral-500">
@@ -44,10 +46,10 @@ export default function ProjectCard({ project }: Props) {
             <ExternalLink
               key={label}
               href={href}
-              className="flex gap-1 transition hover:underline group-hover:text-neutral-800 dark:group-hover:text-neutral-300"
+              className="flex gap-1 items-center transition hover:underline group-hover:text-neutral-800 dark:group-hover:text-neutral-300"
             >
-              <ArrowLinkIcon className="h-5 w-4 fill-neutral-500 transition group-hover:fill-neutral-800 dark:group-hover:fill-neutral-300" />
-              {label}
+              <ArrowLinkIcon className="h-4 w-4 fill-neutral-500 transition group-hover:fill-neutral-800 dark:group-hover:fill-neutral-300" />
+              <p>{label}</p>
             </ExternalLink>
           ))}
         </div>

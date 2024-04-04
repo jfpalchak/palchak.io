@@ -16,22 +16,24 @@ export default function AboutPage() {
       <Heading subtitle="/ about me">
         {NAME}
       </Heading>
-      <div>
+      <div className="mt-6">
         {ABOUT.map((info, index) => (
           <p key={index} className="pb-2 text-sm sm:text-base dark:text-neutral-300">
             {info}
           </p>
         ))}
       </div>
-      <Socials />
+      <div className="my-3">
+        <Socials />
+      </div>
       <div className="mt-8 flex text-neutral-800 dark:text-neutral-300">
         <ExternalLink
           href="/cv/2024.pdf"
           target="_blank"
-          className="flex gap-1 group/link items-center group-hover:transition-all underline-offset-2 hover:underline dark:hover:text-neutral-100"
+          className="flex gap-1 items-center group/link group-hover:transition-all underline-offset-2 hover:underline dark:hover:text-neutral-100"
         >
           <ArrowLinkIcon className="h-5 w-5 fill-neutral-600 group-hover:transition-all dark:fill-neutral-300 dark:group-hover/link:fill-neutral-100" />
-          <p className="h-6">my resume</p>
+          <p>my resume</p>
         </ExternalLink>
       </div>
     </section>

@@ -70,7 +70,7 @@ export default function RootLayout({
       <body className="mx-auto mt-20 max-w-xl antialiased">
         <ThemeProvider>
           <Navigation />
-          <main className="mb-10 flex flex-col px-3">
+          <main className="mb-32 flex flex-col px-3">
             {children}
           </main>
           <Footer />
