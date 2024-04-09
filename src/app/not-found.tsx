@@ -9,7 +9,7 @@ export default function NotFound() {
           page not found
         </Heading>
         <p className="mt-2 text-neutral-500">
-          Whoops! Sorry, couldn&apos;t find what you&apos;re looking for.
+          Whoops! Sorry, couldn&apos;t find what you were looking for.
         </p>
       </div>
       <div className="my-10">
