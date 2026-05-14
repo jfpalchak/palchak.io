@@ -28,7 +28,7 @@ export default function AboutPage() {
       </div>
       <div className="mt-8 flex text-neutral-800 dark:text-neutral-300">
         <ExternalLink
-          href="/cv/2024.pdf"
+          href="/cv/2026.pdf"
           target="_blank"
           className="flex gap-1 items-center group/link group-hover:transition-all underline-offset-2 hover:underline dark:hover:text-neutral-100"
         >
