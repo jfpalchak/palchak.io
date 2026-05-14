@@ -15,15 +15,19 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     name: 'TadHealth',
-    role: 'Front-End Developer',
-    status: 'Jun \'24 - Present',
+    role: 'Software Engineer',
+    status: 'Jun \'24 - Dec \'25',
     stack: [
       'TypeScript',
+      'React',
+      'Zustand',
+      'RR7',
       'Vue',
       'Vuex',
       'Nuxt.js',
       'SCSS',
       'Tailwind',
+      'Express.js',
     ],
     description:
       'A mental health platform designed to provide accessible resources and support for students, counselors, and organizations.',
