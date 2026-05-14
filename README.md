@@ -1,6 +1,6 @@
 # palchak.io
 
-#### This is my personal website and portfolio, built using the Next.js framework for React.
+#### This is my personal website and portfolio, built with Next.js.
 
 ## Technologies Used
 
@@ -12,7 +12,7 @@
 
 ## Local Setup & Installation
 
-This application requires Node.js v18.17+.
+This application [requires](https://nextjs.org/docs/app/getting-started/installation#system-requirements) **Node.js 20.9 or newer**.
 
 To clone this directory and run the application locally, enter the following commands into your terminal:
 
@@ -24,10 +24,6 @@ npm run dev
 ```
 
 With the application running in development mode, open [http://localhost:3000](http://localhost:3000) with your browser to view and navigate the site.
-
-## Credits
-
-Design inspired by [Maxime Bonhomme's site](https://github.com/maximebonhomme/bonhomme-2022).
 
 ## License
 

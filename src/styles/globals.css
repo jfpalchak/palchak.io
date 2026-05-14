@@ -1,9 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@custom-variant dark (&:where(.dark, .dark *));
+
+@utility text-balance {
+  text-wrap: balance;
 }
